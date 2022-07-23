@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Poppins font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- stylesheet link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- favicon link -->
+    <link rel="shortcut icon" type="image/jpg" href="/images/favicon.png" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>kaam ko daam</title>
+</head>
+<body>
+    <!-- navbar section -->
+    <header>
+        <!-- logo And Search Bar -->
+        <div id="logo-search-sign">
+            <div id="logoAndSearchBar">
+                <div id="logo" style="display: flex; align-items: center">
+                <img src="/images/logo1.png" alt="logo" />
+                </div>
+                <form id="search-box" name="search" action="/search" method="post">
+                    <input type="text" placeholder="search jobs...">
+                </form>
+            </div>
+            <div class="signAndLog" id="SandL1">
+                <button class="signIn">Sign In</button>
+                <button class="logIn">Login</button>
+            </div>
+        </div>
+
+        <!-- hidden toggle button -->
+        <a href="#" class="toggle-button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="25"
+            fill="currentColor"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+            />
+          </svg>
+        </a>
+
+        <!-- main nav bar -->
+        <div id="responsive-nav">
+          <div>
+            <nav>
+              <ul id="main-nav" class="navbar-links">
+                <li><a href="#main" id="main-link">Main</a></li>
+                <li><a href="#about" id="about-link">About Us</a></li>
+                <li><a href="#services" id="services-link">Services</a></li>
+                <li><a href="#contact" id="contact-link">Contact Us</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <!-- sign in and log in buttons -->
+        <div class="signAndLog" id="SandL2">
+            <button class="signIn">Sign In</button>
+            <button class="logIn">Login</button>
+        </div>
+
+      </header>
+    <!-- client side script link -->
+    <script src="client.js"></script>
+</body>
+</html>

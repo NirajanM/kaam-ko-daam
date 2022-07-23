@@ -1,0 +1,237 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* root rule */
+:root {
+    --white: white;
+    --black: rgb(32, 32, 32);
+    --darkBlack: rgb(0, 0, 0);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* nav-bar */
+#logo img {
+    width: 5rem;
+    margin-left: 1rem;
+}
+
+#logo,
+#search-box {
+    display: inline;
+    padding-right: 1rem;
+}
+
+#search-box {
+    opacity: 0.6;
+}
+
+#logoAndSearchBar {
+    display: flex;
+    padding-inline: 1rem;
+}
+
+header {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 1rem;
+    color: var(--black);
+    display: block;
+    text-decoration: none;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    display: none;
+}
+
+#main-nav li:hover {
+    transform: scale(1.3);
+    transition: 0.5ms;
+    text-decoration: underline 0.234rem solid var(--darkBlack);
+    text-underline-offset: 0.234rem;
+}
+
+/* signin and login button */
+#logo-search-sign {
+    display: flex;
+}
+
+.signAndLog {
+    padding-inline: 1rem;
+}
+
+#SandL1 {
+    display: none;
+}
+
+.signIn {
+    border: none;
+    background: var(--white);
+    color: var(--black);
+}
+
+.logIn {
+    border-radius: 5px;
+    background-color: var(--white);
+    color: var(--black);
+}
+
+/* responsive nav */
+@media (max-width: 966px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    #main-nav a {
+        font-size: 1.3rem;
+    }
+
+    #logo img,
+    #search-box {
+        margin-top: 1rem;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #main-nav {
+        align-items: center;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        display: none;
+        width: 100%;
+        height: 85vh;
+        flex-direction: column;
+        z-index: 5;
+    }
+
+    #main-nav.active {
+        display: flex;
+    }
+
+    #SandL2 {
+        display: none;
+    }
+
+    #SandL1 {
+        margin-top: 1rem;
+        display: inline;
+    }
+}
+
+@media (max-width:562px) {
+    #logo-search-sign {
+        flex-direction: column;
+    }
+
+    #search-box {
+        width: 10vw;
+    }
+
+}
+
+@media (max-width:383px) {
+    .toggle-button {
+        margin-top: 4rem;
+    }
+}
+
+@media (max-width:202px) {
+    #search-box input {
+        width: 33vw;
+    }
+}
