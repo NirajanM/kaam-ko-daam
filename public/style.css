@@ -185,7 +185,6 @@ header nav ul li a {
     header {
         flex-direction: column;
         align-items: flex-start;
-        justify-content: space-between;
     }
 
     #main-nav {
@@ -249,6 +248,12 @@ header nav ul li a {
     }
 }
 
+@media(max-width: 397px) {
+    #search-box input {
+        width: 50vw;
+    }
+}
+
 @media (max-width:383px) {
     .toggle-button {
         margin-top: 4rem;
@@ -292,4 +297,32 @@ header nav ul li a {
 
 .container div {
     padding: 3.2rem;
+}
+
+/* achievements section */
+#achievements {
+    margin-top: 3.2rem;
+}
+
+/* global classes */
+.flex-container {
+    display: flex;
+}
+
+/* browse job section */
+#browse-job {
+    padding: 3.2rem;
+    margin-top: 3.2rem;
+}
+
+#browse-job .flex-container {
+    flex-direction: column;
+}
+
+.half-width {
+    max-width: 39rem;
+}
+
+#browse-job .flex-container .half-width h2 {
+    margin-bottom: 1rem;
 }
