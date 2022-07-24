@@ -75,7 +75,7 @@ select {
 
 /* root rule */
 :root {
-    --white: white;
+    --white: rgb(255, 255, 255);
     --black: rgb(32, 32, 32);
     --darkBlack: rgb(0, 0, 0);
 }
@@ -94,6 +94,10 @@ body {
 #search-box {
     display: inline;
     padding-right: 1rem;
+}
+
+#search-box input {
+    margin-top: 0.545rem;
 }
 
 #search-box {
@@ -130,7 +134,7 @@ header nav ul li a {
 
 .toggle-button {
     position: absolute;
-    top: 0.75rem;
+    top: 1.65rem;
     right: 1rem;
     display: none;
 }
@@ -155,10 +159,15 @@ header nav ul li a {
     display: none;
 }
 
+#SandL1 .signIn {
+    margin-top: 0.545rem;
+}
+
 .signIn {
     border: none;
     background: var(--white);
     color: var(--black);
+
 }
 
 .logIn {
@@ -214,13 +223,17 @@ header nav ul li a {
     }
 }
 
-@media (max-width:562px) {
+@media (max-width:592px) {
     #logo-search-sign {
         flex-direction: column;
     }
 
     #search-box {
-        width: 10vw;
+        width: 9vw;
+    }
+
+    .signAndLog {
+        margin-left: 1.7rem;
     }
 
     .container {
@@ -236,7 +249,7 @@ header nav ul li a {
     }
 }
 
-@media (min-width:562px) {
+@media (min-width:593px) {
     .container div:nth-child(1) {
         border: none;
         border-right: 3px solid var(--black);
@@ -256,7 +269,7 @@ header nav ul li a {
 
 @media (max-width:383px) {
     .toggle-button {
-        margin-top: 4rem;
+        margin-top: 3.55rem;
 
     }
 }
