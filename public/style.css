@@ -17,6 +17,7 @@ blockquote,
 dl,
 dd {
     margin: 0;
+    
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -75,7 +76,7 @@ select {
 
 /* root rule */
 :root {
-    --white: rgb(255, 255, 255);
+    --white: white;
     --black: rgb(32, 32, 32);
     --darkBlack: rgb(0, 0, 0);
 }
@@ -94,10 +95,6 @@ body {
 #search-box {
     display: inline;
     padding-right: 1rem;
-}
-
-#search-box input {
-    margin-top: 0.545rem;
 }
 
 #search-box {
@@ -134,7 +131,7 @@ header nav ul li a {
 
 .toggle-button {
     position: absolute;
-    top: 1.65rem;
+    top: 0.75rem;
     right: 1rem;
     display: none;
 }
@@ -159,15 +156,10 @@ header nav ul li a {
     display: none;
 }
 
-#SandL1 .signIn {
-    margin-top: 0.545rem;
-}
-
 .signIn {
     border: none;
     background: var(--white);
     color: var(--black);
-
 }
 
 .logIn {
@@ -223,54 +215,20 @@ header nav ul li a {
     }
 }
 
-@media (max-width:592px) {
+@media (max-width:562px) {
     #logo-search-sign {
         flex-direction: column;
     }
 
     #search-box {
-        width: 9vw;
+        width: 10vw;
     }
 
-    .signAndLog {
-        margin-left: 1.7rem;
-    }
-
-    .container {
-        flex-direction: column;
-    }
-
-    .container div:nth-child(1) {
-        border-bottom: 3px solid var(--black);
-    }
-
-    .container div:nth-child(2) {
-        border-bottom: 3px solid var(--black);
-    }
-}
-
-@media (min-width:593px) {
-    .container div:nth-child(1) {
-        border: none;
-        border-right: 3px solid var(--black);
-    }
-
-    .container div:nth-child(2) {
-        border: none;
-        border-right: 3px solid var(--black);
-    }
-}
-
-@media(max-width: 397px) {
-    #search-box input {
-        width: 50vw;
-    }
 }
 
 @media (max-width:383px) {
     .toggle-button {
-        margin-top: 3.55rem;
-
+        margin-top: 4rem;
     }
 }
 
@@ -312,30 +270,61 @@ header nav ul li a {
     padding: 3.2rem;
 }
 
-/* achievements section */
-#achievements {
-    margin-top: 3.2rem;
+.container div:nth-child(1) {
+    border-right: 3px solid var(--black);
 }
 
-/* global classes */
-.flex-container {
-    display: flex;
+.container div:nth-child(2) {
+    border-right: 3px solid var(--black);
 }
 
-/* browse job section */
-#browse-job {
-    padding: 3.2rem;
-    margin-top: 3.2rem;
+.container div:nth-child(3) {
+    padding-right: 1rem;
 }
 
-#browse-job .flex-container {
-    flex-direction: column;
+/* css adding from here */
+
+.containerB
+{
+    padding: 3rem;
 }
 
-.half-width {
-    max-width: 39rem;
+.browseHeading
+{
+    font-size: 2rem;
+    font-weight:500;
+    padding: 1rem 1rem 1rem 0rem;
+    
+}
+.headingSection
+{
+    margin-bottom: 3rem;
 }
 
-#browse-job .flex-container .half-width h2 {
-    margin-bottom: 1rem;
+.h-56
+{
+    margin: 2rem;
+    margin-left: 0px;
+}
+
+.child
+{
+    margin-left: 0px;
+    padding: 2rem;
+    background-color: #f7f7f7;
+    color: black;
+}
+.child-black
+{
+    background-color: black;
+    color: white;
+}
+
+.inline
+{
+    display: inline;
+}
+.w-6
+{
+    text-align: right;
 }

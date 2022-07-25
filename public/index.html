@@ -13,6 +13,9 @@
     <!-- favicon link -->
     <link rel="shortcut icon" type="image/jpg" href="/images/favicon.png" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" />
+
     <title>kaam ko daam</title>
 </head>
 <body>
@@ -32,11 +35,11 @@
                 <button class="signIn">Sign In</button>
                 <button class="logIn">Login</button>
             </div>
+            
         </div>
 
         <!-- hidden toggle button -->
-        <div>
-        <a href="#" id="ham-burger" class="toggle-button">
+        <a href="#" class="toggle-button">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="25"
@@ -50,14 +53,15 @@
             />
           </svg>
         </a>
-      </div>
+
         <!-- main nav bar -->
         <div id="responsive-nav">
           <div>
             <nav>
               <ul id="main-nav" class="navbar-links">
                 <li><a href="#main" id="main-link">Main</a></li>
-                <li><a href="#browse-job" id="services-link">Browse Jobs</a></li>
+                <li><a href="#about" id="about-link">About Us</a></li>
+                <li><a href="#services" id="services-link">Services</a></li>
                 <li><a href="#contact" id="contact-link">Contact Us</a></li>
               </ul>
             </nav>
@@ -80,7 +84,7 @@
           <img src="images/findJob.png" alt="find job" id="find-job">
         </div>
       </section>
-      <section id="achievements">
+      <section id="achievments">
         <div class="container">
             <div>
               <h3 class="heading">84% hire rate</h3>
@@ -96,19 +100,126 @@
             </div>
         </div>
       </section>
-      <!-- browse job section -->
-      <section id="browse-job">
-        <div class="flex-container">
-          <div class="half-width">
-            <h2>Browse Jobs</h2>
-            <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque placeat et sint ipsa optio deserunt error, laboriosam voluptate aliquam perferendis cupiditate ut tempora facilis illo nostrum at sunt. Aspernatur, quos.</p>
+      
+      <!-- Pradip started from here, aba gand hunxa website -->
+      <section id="browsejobs">
+        <div class="containerB">
+
+          <div class="headingSection">
+            <h1 class="browseHeading">Browse Jobs</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>Vel blanditiis inventore repellat voluptatem id autem obcaecati voluptatum accusamus soluta officiis quas fuga</p>
           </div>
-          <div>
+
+          <div class="searchBar">
+          
+            <form>
+              <div class="flex">               
+                  <label for="search-dropdown" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-gray-300">Your Email</label>
+                  <button id="dropdown-button" data-dropdown-toggle="dropdown" class="flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-sm font-medium text-center text-gray-900 bg-gray-100 border border-gray-300 rounded-l-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700 dark:text-white dark:border-gray-600" type="button">Job-type <svg aria-hidden="true" class="ml-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
+                  <div id="dropdown" class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="top" style="position: absolute; inset: auto auto 0px 0px; margin: 0px; transform: translate3d(897px, 5637px, 0px);">
+                      <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdown-button">
+                      <li>
+                          <button type="button" class="inline-flex py-2 px-4 w-full hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Full-Time</button>
+                      </li>
+                      <li>
+                          <button type="button" class="inline-flex py-2 px-4 w-full hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Part-Time</button>
+                      </li>
+                      <li>
+                          <button type="button" class="inline-flex py-2 px-4 w-full hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Remote</button>
+                      </li>
+                      <li>
+                          <button type="button" class="inline-flex py-2 px-4 w-full hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Others</button>
+                      </li>
+                      </ul>
+                  </div>
+                  
+                  <div class="relative w-full">
+                      <input type="search" id="search-dropdown" class="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-r-lg border-l-gray-50 border-l-2 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-l-gray-700  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500" placeholder="Job Title, Salary, or Companies..." required>
+                      <button type="submit" class="absolute top-0 right-0 p-2.5 text-sm font-medium text-white bg-blue-700 rounded-r-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                          <svg aria-hidden="true" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                          <span class="sr-only">Search</span>
+                      </button>
+                  </div>
+              </div>
+          </form>
+        </div>
+
+        <div class="jobList ">
+
+          <div class="h-56 grid grid-cols-2 gap-4 content-start md:grid-cols-3">
+            <div class="child child-black rounded-md" >
+
+              <div class="child-01">
+                <div class="child-child-01">
+                  <h1 class="inline">Product Designer</h1>
+                </div>
+                <div class="child-child-02">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                  </svg>
+                </div>
+
+              </div>
+
+              <div class="grid grid-rows-6 grid-flow-col gap-4">
+                <div>01</div>
+                <!-- ... -->
+                <div>09</div>
+              </div>
+              
+            </div>
+
+            <div class="child rounded-md">
+              <h2>heading</h2>
+              <h2>heading</h2>
+              <h2>heading</h2>
+              <h2>heading</h2>
+              <h2>heading</h2>
+            </div>
+
+            <div class="child rounded-md">
+
+            </div>
+
+            <div class="child rounded-md">
+
+            </div>
+
+            <div class="child rounded-md">
+
+            </div>
+
+            <div class="child rounded-md">
+
+            </div>
+
+            <div class="child rounded-md">
+            
+            </div>
+
+            <div class="child rounded-md">
+
+            </div>
+
+            <div class="child rounded-md">
+
+            </div>
+
+
+
 
           </div>
+
+
         </div>
+        
+        
+
+        </div>
+
       </section>
     <!-- client side script link -->
     <script src="client.js"></script>
+    <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
 </body>
 </html>
